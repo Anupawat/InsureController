@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Anup.Models.Insuree>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Anup Siingh</th>
+            <th>Rawat</th>
+            <th>anuprawat1055@gmail.com</th>
+            <th>Quote</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var insuree in Model)
+        {
+            <tr>
+                <td>@insuree.Anup Singh</td>
+                <td>@insuree.Rawat</td>
+                <td>@insuree.anuprawat1055@gmail.com</td>
+                <td>@insuree.Quote.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
